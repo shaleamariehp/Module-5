@@ -1,0 +1,98 @@
+:root {
+  --bg-color: #184E77;
+  --fg-color: #1A759F;
+  --dark: #34A0A4;
+  --secondary: #52B69A;
+  --primary: #76C893;
+  --danger: #D98D8D;
+  --drop-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+/* All the elements that you target */
+body {
+  background-color: var(--bg-color);
+}
+
+/* Each ID & class layer by layer */
+#login-fg {
+  /* Spacing & Sizing */
+  width: 412px;
+  height: 515px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border-radius: 30px;
+  /* Color & Shading */
+  background-color: var(--fg-color);
+  box-shadow: var(--drop-shadow);
+}
+
+#username {
+  margin-bottom: 30px;
+}
+
+#password {
+  margin-bottom: 132px;
+}
+
+#credentials {
+  margin-top: 113px;
+  display: inline-block;
+  width: 100%;
+}
+
+.login-input {
+  /* Spacing & Sizing */
+  width: 252px;
+  height: 57px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  border: none;
+  border-radius: 15px;
+  /* Font */
+  font-size: 1.5em;
+  font-weight: bold;
+  /* Coloring */
+  background-color: var(--dark);
+  color: white;
+}
+
+.login-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.login-input:focus {
+  background-color: var(--secondary);
+  box-shadow: var(--drop-shadow);
+}
+
+.submit-login {
+  /* Spacing & Sizes */
+  width: 252px;
+  height: 76px;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  /* Fonts */
+  font-weight: bold;
+  font-size: 2.6em;
+  /* Color & Shading */
+  box-shadow: var(--drop-shadow);
+  background-color: var(--secondary);
+  color: white;
+}
+
+#login-button:hover {
+  box-shadow: none;
+}
+
+#login-button:active {
+  box-shadow: none;
+  background-color: var(--primary);
+}
